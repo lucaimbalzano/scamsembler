@@ -10,6 +10,6 @@ redditRouter = APIRouter(
 
 
 
-@redditRouter.get("/get-single-reddit")
-async def get_books():
-    return redditController.getSingleReddit()
+@redditRouter.get("/get-cycle-reddit/{cycle}")
+async def getReddit(cycle:int):
+    return redditController.getRedditsByCycle(cycle)
