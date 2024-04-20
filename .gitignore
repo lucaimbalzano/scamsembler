@@ -3,3 +3,8 @@ ggml-medium.en.bin
 *.pyc
 /AssemblerVideo/input
 /AssemblerVideo/output
+/AssemblerVideo/my-video/node_modules
+AssemblerVideo/my-video/public/sample-video.bak.mp4
+*.mp4
+*.wav
+/AssemblerVideo/my-video/whisper.cpp
