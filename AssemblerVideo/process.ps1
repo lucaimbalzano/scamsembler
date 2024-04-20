@@ -1,3 +1,5 @@
+$random_number = Get-Random -Minimum 1 -Maximum 500
+$video_length = 60
 try {
     $random_number = Get-Random -Minimum 60 -Maximum 3000
     $video_length = 60

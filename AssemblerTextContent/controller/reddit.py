@@ -1,9 +1,5 @@
-
-
-
 import json
 import time
-
 import requests
 from scraper.model.reddit.model import RedditData, RedditListing
 
@@ -17,13 +13,13 @@ def getRandom():
 
 
 def getRedditsByCycle(cycle):
+    # url = "https://www.reddit.com/r/AITAH/top/.json?t=year"
+    # url = "https://www.reddit.com/r/AITAH/top/.json?t=week"
+    # url = "https://www.reddit.com/r/AITAH/top/.json?t=day"
     url = "https://www.reddit.com/r/AITAH/top/.json?t=month"
     time.sleep(2)
     response = requests.get(url)
     reddit_listings = []
-    url = "https://www.reddit.com/r/AITAH/top/.json?t=year"
-    url = "https://www.reddit.com/r/AITAH/top/.json?t=week"
-    url = "https://www.reddit.com/r/AITAH/top/.json?t=day"
     if response.status_code == 200:
         reddit_data = json.loads(response.text)
         redditListing = RedditListing(reddit_data.get('kind'),**reddit_data.get('data'))
