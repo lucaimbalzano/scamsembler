@@ -1,0 +1,142 @@
+{
+	"systeminfo": "AVX = 1 | AVX2 = 1 | AVX512 = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | METAL = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | SSSE3 = 0 | VSX = 0 | CUDA = 0 | COREML = 0 | OPENVINO = 0 | ",
+	"model": {
+		"type": "medium",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 1024,
+			"head": 16,
+			"layer": 24
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1024,
+			"head": 16,
+			"layer": 24
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": ".\\ggml-medium.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:08,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 8080
+			},
+			"text": " \"So I 29F am a photographer and my sister-in-law 21F let's call her Alyssa, and her 24M fiancé,\""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,080",
+				"to": "00:00:14,080"
+			},
+			"offsets": {
+				"from": 8080,
+				"to": 14080
+			},
+			"text": " Brandon had asked me to take their engagement photos. I initially agreed and was happy about it."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,080",
+				"to": "00:00:21,360"
+			},
+			"offsets": {
+				"from": 14080,
+				"to": 21360
+			},
+			"text": " I offered help with styling, scouted locations and everything. Let me add here that Brandon had"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,360",
+				"to": "00:00:26,560"
+			},
+			"offsets": {
+				"from": 21360,
+				"to": 26560
+			},
+			"text": " always seemed to just be the shy and quiet kid who kept to himself ever since he was introduced to us"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,560",
+				"to": "00:00:34,000"
+			},
+			"offsets": {
+				"from": 26560,
+				"to": 34000
+			},
+			"text": " two years ago. I never had a clue he actually hates me and my husband. A lot. This isn't the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,000",
+				"to": "00:00:39,440"
+			},
+			"offsets": {
+				"from": 34000,
+				"to": 39440
+			},
+			"text": " first time I felt a little awkward tension between Brandon and I, but Alyssa let me know that he did"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,440",
+				"to": "00:00:46,880"
+			},
+			"offsets": {
+				"from": 39440,
+				"to": 46880
+			},
+			"text": " like me and I was overthinking it. This was about a month ago now. My brother-in-law 28M Cole just"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:46,880",
+				"to": "00:00:52,480"
+			},
+			"offsets": {
+				"from": 46880,
+				"to": 52480
+			},
+			"text": " called us to let me know about his weekend plans, asked to hang, the average conversation."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:53,440",
+				"to": "00:00:57,920"
+			},
+			"offsets": {
+				"from": 53440,
+				"to": 57920
+			},
+			"text": " But then was like \"Oh man, I gotta tell you that Brandon really let it be known"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:57,920",
+				"to": "00:00:59,920"
+			},
+			"offsets": {
+				"from": 57920,
+				"to": 59920
+			},
+			"text": " that he can't stand you guys at dinner with-\""
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+	"systeminfo": "AVX = 1 | AVX2 = 1 | AVX512 = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | METAL = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | SSSE3 = 0 | VSX = 0 | CUDA = 0 | COREML = 0 | OPENVINO = 0 | ",
+	"model": {
+		"type": "medium",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 1024,
+			"head": 16,
+			"layer": 24
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1024,
+			"head": 16,
+			"layer": 24
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": ".\\ggml-medium.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,920"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1920
+			},
+			"text": " Using Remotion's TikTok template,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,920",
+				"to": "00:00:05,720"
+			},
+			"offsets": {
+				"from": 1920,
+				"to": 5720
+			},
+			"text": " you can create engaging reels and TikToks"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,720",
+				"to": "00:00:09,580"
+			},
+			"offsets": {
+				"from": 5720,
+				"to": 9580
+			},
+			"text": " by transcribing your audio using whisper CPP"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,580",
+				"to": "00:00:12,040"
+			},
+			"offsets": {
+				"from": 9580,
+				"to": 12040
+			},
+			"text": " and animating your captions with React."
+		}
+	]
+}
