@@ -2,16 +2,15 @@ try {
     $random_number = Get-Random -Minimum 60 -Maximum 3000
     $video_length = 60
     echo "chiamo il sito"
-    $value = Invoke-RestMethod -Uri "http://127.0.0.1:8000/reddit/get-single-reddit"
-
-    $posts = @($value)
+    $posts = Invoke-RestMethod -Uri "http://127.0.0.1:8000/reddit/get-cycle-reddit/10"
     $i = 0
 
     foreach ($post in $posts){
         $i = $i + 1
         echo "genero l'audio"
-        .\consoleApp\ConsoleApp1.exe $post
-        cp .\consoleApp\test.wav .\input\audio.wav
+        #.\consoleApp\ConsoleApp1.exe $post
+        gtts-cli $post --output test.wav
+        cp test.wav .\input\audio.wav
 
         echo "genero un video di $video_length secondi partendo dal secondo $random_number"
 
@@ -40,8 +39,6 @@ try {
     }
 }
 catch {
-
     Write-Host $_.Exception.Message
         exit
-
 }

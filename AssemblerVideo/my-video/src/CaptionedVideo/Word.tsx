@@ -12,7 +12,7 @@ export const Word: React.FC<{
 	stroke: boolean;
 }> = ({enterProgress, text, stroke}) => {
 	const {width} = useVideoConfig();
-	const desiredFontSize = 120;
+	const desiredFontSize = 50;
 
 	const fittedText = fitText({
 		fontFamily,
@@ -20,16 +20,18 @@ export const Word: React.FC<{
 		withinWidth: width * 0.8,
 	});
 
-	const fontSize = Math.min(desiredFontSize, fittedText.fontSize);
+	const fontSize = desiredFontSize;
 
 	return (
 		<AbsoluteFill
 			style={{
 				justifyContent: 'center',
+                textAlign: "center",
 				alignItems: 'center',
 				top: undefined,
 				bottom: 350,
 				height: 150,
+                padding: 30
 			}}
 		>
 			<div
