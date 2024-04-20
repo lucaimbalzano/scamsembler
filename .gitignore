@@ -1,0 +1,5 @@
+ggml-medium.en.bin
+/AssemblerTextContent/venv
+*.pyc
+/AssemblerVideo/input
+/AssemblerVideo/output
