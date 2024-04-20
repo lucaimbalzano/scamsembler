@@ -2,7 +2,7 @@ import json
 
 
 class RedditListing:
-    def __init__(self, kind, data):
+    def __init__(self, kind, **data):
         self.kind = kind
         self.data = RedditData(**data)
 
@@ -25,6 +25,13 @@ class RedditPost:
         self.subreddit = kwargs.get('subreddit')
         self.selftext = kwargs.get('selftext')
         self.author_fullname = kwargs.get('author_fullname')
+        self.title = kwargs.get('title')
+        self.ups = kwargs.get('ups')
+        self.score = kwargs.get('score')
+        self.created = kwargs.get('created')
+        self.url = kwargs.get('url')
+        self.subreddit_subscribers = kwargs.get('subreddit_subscribers')
+        self.num_crossposts = kwargs.get('num_crossposts')
 
 
 def print_object(reddit_listings):
